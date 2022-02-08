@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <!-- <link rel="stylesheet" href="./css/contacts.min.css"> -->
+    <link rel="stylesheet" href="./css/contacts.min.css" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <header class="header">
+    <div class="container header__flex">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="./img/logo.svg" alt="logo" class="header__logo-pc">
+                <!-- <img src="./img/logo-mobile.png" alt="logo" class="header__logo-mobile"> -->
+            </a>
+        </div>
+        <div class="mobile-menu">
+            <span></span>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a href="HowItWorks.html" class="header__list_item">How it works</a></li>
+                <li class="header__list-lidropping">
+                    <a href="#" class="header__list_item header__list-dropping">Currencies</a>
+                    <ul class="header__sublist">
+                        <li><a href="allcourses.html" class="header__subitem">All courses</a></li>
+                        <li><a href="bitcoin.html" class="header__subitem">Bitcoin</a></li>
+                        <li><a href="ethereum.html" class="header__subitem">Ethereum</a></li>
+                        <li><a href="litecoin.html" class="header__subitem">Litecoin</a></li>
+                    </ul>
+                </li>
+                <li><a href="faq.html" class="header__list_item">FAQ</a></li>
+                <li><a href="contacts.html" class="header__list_item">Contacts</a></li>
+            </ul>
+        </nav>
+        <button class="header__btn">English</button>
+    </div>
+</header> <section class="main">
+    <div class="container">
+        <h1 class="main-title">Contacts</h1>
+        <div class="block">
+            <div class="block__mail">
+                <p class="block__mail-title">
+                    If you have any questions when using Simple Swap, we are ready to answer them
+                </p>
+                <div class="block__mail_box">
+                    <p class="block__mail_box-title">For service issues:</p>
+                    <p class="block__mail_box-mail">support@excryptor.io</p>
+                </div>
+                <div class="block__mail_box">
+                    <p class="block__mail_box-title">For service issues:</p>
+                    <p class="block__mail_box-mail">marketing@excryptor.io</p>
+                </div>
+                <div class="block__mail_box">
+                    <p class="block__mail_box-title">For service issues:</p>
+                    <p class="block__mail_box-mail">hello@excryptor.io</p>
+                </div>
+                <div class="block__mail_box-social">
+                    <p class="block__mail_box-social-title">Social media</p>
+                    <a href="https://www.facebook.com/" class="block__mail_box-social-link"><img src="./img/facebook.svg" alt="faccebok" class="block__mail_box-social-icon"></a>
+                    <a href="https://twitter.com" class="block__mail_box-social-link"><img src="./img/twitter.svg" alt="twitter" class="block__mail_box-social-icon"></a>
+                    <a href="https://www.instagram.com/" class="block__mail_box-social-link"><img src="./img/instagram.svg" alt="instagram" class="block__mail_box-social-icon"></a>
+                    <a href="https://www.youtube.com" class="block__mail_box-social-link"><img src="./img/youtube.svg" alt="youtube" class="block__mail_box-social-icon"></a>
+                </div>
+            </div>
+            <div class="block__form">
+                <p class="block__form-title">If you still have questions, please fill out the form:</p>
+                <div class="block__form_box"> 
+                    <form onsubmit="return checkCheckBoxes(this);"> 
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="EX Criptor">
+                        <input type="hidden" name="admin_email" value="support@excryptor.io">
+                        <input type="hidden" name="form_subject" value="Feedback">
+                        <!-- END Hidden Required Fields -->
+
+                        <input class="block__from-email" type="email" name="E-mail" placeholder="Your email">
+                        <input class="block__from-name" type="text" name="Name" placeholder="You name">
+                        <input class="block__from-subject" type="text" name="Message subject" placeholder="Message subject">
+                        <textarea class="block__from-message" name="Message" placeholder="Your message"></textarea>
+                        <input class="block__from-check" type="checkbox" id="check" name="conditionAgreement" value="yes">
+                        <label class="block__from-text" for="check">I agree with the privacy policy and consent to the processing of my personal data</label>
+                        <div class="block__from_btnFlex">
+                            <button class="block__form-btn type="submit">Send now</button>
+                            <div class="block__form_security">
+                                <img class="block__form_security-img" src="./img/form.svg" alt="form">
+                                <p class="block__form_security-text">We guarantee the safety and security of your data</p>
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" language="JavaScript">
+    function checkCheckBoxes(theForm) {
+        if (
+        theForm.conditionAgreement.checked == false) 
+        {
+            alert ('You didn\'t choose any of the checkboxes!');
+            return false;
+        } else {    
+            return true;
+        }
+        
+    }
+</script>
+    <script src="js/menu.js"></script>
+<!-- Footer  -->
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__top">
+            <div class="footer__top_contacts">
+                    <img src="./img/logo.svg" alt="" class="footer__top-logo">
+                <p class="footer__top-address">
+                    7832 Brookside Lane
+                    Hesperia, California CA 92345   
+                </p>
+                <div class="footer__top_messadgers">
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/facebook.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/twitter.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/instagram.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/youtube.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__top_navFlex">
+                <div class="footer__top_nav">
+                    <p class="footer__top-title">
+                        Our company
+                    </p>
+                    <ul class="footer__top_list">
+                        <li><a href="#" class="footer__top_item">About us</a></li>
+                        <li><a href="#" class="footer__top_item">Blog & News</a></li>
+                        <li><a href="#" class="footer__top_item">FAQ</a></li>
+                        <li><a href="#" class="footer__top_item">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__top_nav">
+                    <p class="footer__top-title">
+                        Currencies
+                    </p>
+                    <ul class="footer__top_list">
+                        <li><a href="#" class="footer__top_item">Bitcoin</a></li>
+                        <li><a href="#" class="footer__top_item">Ethereum</a></li>
+                        <li><a href="#" class="footer__top_item">Litecoin</a></li>
+                        <li><a href="#" class="footer__top_item">Monero</a></li>
+                        <li><a href="#" class="footer__top_item">All currencies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__top_app">
+                <p class="footer__top-title">Mobile App</p>
+                <p class="footer__top_app-info">
+                    Download our mobile app for your Android or iOS device
+                </p>
+                <a href="#" class="footer__top_app-icon open-popup"><img src="./img/GoogleplayBtn.svg" alt="Google Play"></a>
+                <a href="#" class="footer__top_app-icon2 open-popup"><img src="./img/AppStoreBtn.svg" alt="App Store"></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__bottom-text">© 2021 excryptor. All rights reserved</p>
+            <ul class="footer__bottom-list">
+                <li><a href="#" class="footer__bottom-item">Privacy Policy</a></li>
+                <li><a href="#" class="footer__bottom-item">Terms & Conditions</a></li>
+                <li><a href="#" class="footer__bottom-item">Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup__bg"> 
+        <div class="popup">
+            <img src="./img/close.png" alt="x" class="close-popup">
+            <p class="popup-p1">The ExCryptor application will be available very soon. At the moment, the development team is developing it.</p>
+        </div>
+    </div>  
+</footer>
+<script src="js/alert.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+      integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/form.js"></script>
+  </body>
+</html>

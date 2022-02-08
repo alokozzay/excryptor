@@ -1,0 +1,87 @@
+.block1__box {
+    margin-bottom: 120px;
+    &-info {
+        max-width: 488px;
+        font-size: 18px;
+        line-height: 160%;
+        margin-right: 48px;
+     }
+     &-image {
+         position: relative;
+         margin-left: 69px;
+         &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 2px;
+            height: 331px;
+            background-color: #37353D;
+            left: 0;
+            margin-left: -127px;
+         }
+     }
+}
+.block {
+    &-span {
+        color: #60CCE2;
+    }
+    &-container {
+        Display: grid;  
+        grid-template-areas: 
+        'number title'
+        'number content';
+        Grid-template-columns: 80px 1fr;
+        Grid-template-rows: 80px 1fr;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+    }
+    &-text {
+        grid-area: title;
+        font-family: TTFirsNeue Sans;
+        width: 466px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 110%;
+        align-self: center;
+    }
+    &-number {
+        position: relative;
+        grid-area: number;
+        font-family: TTFirsNeue Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        width: 80px;
+        height: 80px;
+        background: #FD7B01;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        &::before {
+            content: "";
+            left: 0;
+            margin-left: 37px;
+            top: 100%;
+            margin-top: 32px;  
+            position: absolute;
+            width: 6px;
+            height: 523px;
+            background: #37353D;
+            border-radius: 4px;
+        }
+    }
+    &-box {
+        grid-area: content;
+        max-width: 1080px;
+        padding: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(180deg, #212126 0%, #26262E 100%);
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+    }
+}

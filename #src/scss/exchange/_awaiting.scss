@@ -1,0 +1,157 @@
+
+.awaiting__box {
+    position: relative;
+    &-subtitle {
+        margin-top: 50px;
+        font-weight: 500;
+        font-size: 24px;
+        color: #999AA3;
+    }
+    &_new-key {
+        margin-top: 28px;
+        font-size: 36px;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 15px;
+            cursor: pointer;
+        }
+    }
+    &_way {
+        margin-top: 110px;
+        margin-bottom: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        &-circle {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: #1D1B22;
+            border: 3px solid #2F3038;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+        &-delimiter {
+            width: 138px;
+            height: 3px;
+            background-color: #797A81;;
+            // border: 2px solid #797A81;
+        }
+    }
+    &_my-key {
+        margin-top: 28px;
+        font-size: 36px;
+    }
+}
+.way-circle1::before {
+    content: "Awaiting deposit";
+    position: absolute;
+    width: 184px;
+    top: 100%;
+    left: 50%;
+    margin-left: -92px;
+    font-size: 24px;
+    margin-top: 28px;
+}
+.way-circle2::before {
+    content: "Confirming";
+    position: absolute;
+    width: 121px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 24px;
+    margin-top: 28px;
+    color: #797A81;
+}
+.way-circle3::before {
+    content: "Exchanging";
+    position: absolute;
+    width: 126px;
+    top: 100%;
+    left: 50%;
+    margin-left: -63px;
+    font-size: 24px;
+    margin-top: 28px;
+    color: #797A81;
+}
+.way-circle4::before {
+    content: "Sending to you";
+    position: absolute;
+    width: 163px;
+    top: 100%;
+    left: 50%;
+    margin-left: -81.5px;
+    font-size: 24px;
+    margin-top: 28px;
+    color: #797A81;
+}
+
+.trade-info {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: -35px;
+    right: 24px;
+
+    p {
+        font-family: IBMPlexSans Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 100%;
+        color: #797A81;
+    }
+
+    &__id {
+        text-align: right;
+    }
+
+    svg {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .trade-info {
+        
+        top: 5px;
+        right: 24px;
+    
+        p {
+            font-family: IBMPlexSans Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 100%;
+            color: #797A81;
+        }
+    
+        &__id {
+            text-align: right;
+        }
+    
+        svg {
+            margin-left: 15px;
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+
+
+.checked-status {
+    background: url("../img/statusChecked.svg");
+    border: none;
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 54px;
+
+    &::before {
+        color: #FFF;
+    }
+}

@@ -1,0 +1,185 @@
+.table {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    &__box {
+        max-width: 1200px;
+        background: #26262E;
+        border-radius: 16px;
+        margin-bottom: 60px;
+        &_top {
+            height: 64px;
+            border-bottom: 1px solid #37353D;
+        }
+        &_height {
+            height: 72px;
+        }
+    }
+    &__boxFlex{
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        &-numbertop {
+            line-height: 64px;
+            text-align: center;
+            font-size: 16px;
+            color: #797A81;
+        }
+        &-buytop {
+            line-height: 64px;
+            font-size: 16px;
+            color: #797A81;
+        }
+        &-pricetop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-changetop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-volumetop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-actiontop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-global {
+            line-height: 72px;
+            font-weight: 500;
+            font-size: 16px;
+            text-align: right;
+        }
+        &-number{
+            color: #999AA3;
+            text-align: center; 
+        }
+        &-buy {
+            text-align: left;
+        }
+        &-buyimage {margin-right: 16px; width: 32px;
+        height: 32px;}
+        &-change-down {
+            color: #FF4B32;
+        }     
+        &-change {
+            color: #16C784;
+        }
+        &-volume span {color: #999AA3;}
+        &-action {
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            line-height: 34px;
+            font-family: IBMPlexMono Sans;
+        }
+       &_btn {
+           float: right;
+           width: 108px;
+           height: 34px;
+           background: #31333B;
+            /* Turquoise */
+            border: 1.2px solid #60CCE2;
+            box-sizing: border-box;
+            border-radius: 10px;
+       }
+    }
+
+    &__number {width: 100px;}
+    &__buy {width: 320px; display: flex; align-items: center; span {
+        color: #999AA3;
+    }}
+    &__price{width: 195px;}
+    &__change{width: 179px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+    &__volume{width: 200px;}
+    &__action{width: 224px;}
+    &__btn {
+        text-align: center;
+        
+    }
+    &-btn {
+        display: none;
+        padding: 19px 56px;
+        font-family: IBMPlexMono Sans;
+        font-weight: 600;
+        font-size: 18px;
+        /* Background */
+        background: #1D1B22;
+        /* Orange */
+        border: 1px solid #FD7B01;
+        box-sizing: border-box;
+        border-radius: 12px;
+        transition: all .4s ease;
+        &-text {color: #FD7B01;}
+        width: 100%;
+    }
+    &__mobile-title {
+        display: none;
+        text-align: left;
+        max-width: 343px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 110%;
+        margin-bottom: 32px;
+    }
+    &__btn_pc {
+        text-align: center;
+    }
+    &-btn-pc {
+        display: inline-block;
+        min-width: 285px;
+        height: 56px;
+        border: 1px solid #FD7B01;
+        box-sizing: border-box;
+        border-radius: 12px;
+        line-height: 56px;
+        font-family: IBMPlexMono Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        color: #FD7B01;
+    }
+}
+
+.redText {
+    color: #FF4B32;
+}
+.greenText {
+    color: #16C784;
+}
+.table__action {
+    padding-right: 20px;
+}
+.table__text-volume-title, .table__buy-span-price {
+    display: none;
+}
+.table__mobile_btn, .table__change-title {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .table__box_height {
+        display: none;
+    }
+}
+.table-mobile__spoiler {
+    display: none;  
+}

@@ -1,0 +1,35 @@
+<section class="agree">
+    <div class="container">
+        <div class="agree__box exchange-box">
+            <p class="box-title">Please confirm the details of your exchange</p>
+
+            <div class="agree__box-subtitle">You send</div>
+            <div class="agree__box_currency exchange__currency">
+                <img src="../img/btc-exchange.svg" alt="icon" class="agree__box_currency-img exchange__currency-img">
+                <p class="agree__box_currency-value exchange__currency-value">0.4732 BTC</p> 
+            </div>
+
+            <p class="agree__box-swap">1 BTC = 14.775557 ETH</p>
+            
+            <div class="agree__box-subtitle">You receive</div>
+            <div class="agree__box_currency exchange__currency">
+                <img src="../img/eth-exchange.svg" alt="icon" class="agree__box_currency-img">
+                <p class="agree__box_currency-value exchange__currency-value">≈ 6.9917936 ETH</p> 
+            </div>
+
+            <div class="agree__box-key">0x36c9cc925dd58747044f52d0a57917df64555a3d</div>
+
+            <div class="agree__box-subtitle">Estimated Arrival</div>
+            <div class="agree__box-time">≈ 10 minutes</div>
+
+            <input class="agree__box-check" type="checkbox" id="check" name="Privacy Policy" value="yes">
+            <label class="agree__box-check-text" for="check">I've read and agree to the ExCryptor Terms of Use and Privacy Policy</label>
+
+            <div class="agree__box_btn">
+                <button class="agree__box_btn-confirm" onclick="nextPage(); startTrade()" disabled>Confirm</button>
+                <button class="agree__box_btn-back" onclick="prevPage()">Back</button>
+            </div>
+        
+        </div>
+    </div>
+</section>

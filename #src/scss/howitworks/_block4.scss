@@ -1,0 +1,40 @@
+.block4__box {
+
+    &-text {
+        max-width: 488px;
+        font-size: 18px;
+        line-height: 160%;
+    }
+    &_company {
+        position: relative;
+        margin-left: 68px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 122px;
+            background-color: #37353D;
+            left: 0;
+            margin-left: -62px;
+        }
+
+        width: 386px;
+        display: grid;
+        grid-template-columns: 128px 104px 74px;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: space-between;
+        grid-column-gap: 40px;
+        grid-row-gap: 31px;
+        
+    }
+}
+.block4 {
+    &-container {
+        padding-bottom: 80px;
+        border-bottom: 1px solid #37353D;
+    }
+    &__title-number::before {
+        opacity: 0;
+    }
+    margin-bottom: 80px;
+}

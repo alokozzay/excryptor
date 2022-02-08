@@ -1,0 +1,279 @@
+/*==========  Desktop First  ========== */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1240px) {
+    .agree__box_btn-confirm {
+        width: 400px;
+    }
+    .agree__box_btn-back {
+         width: 200px;
+    }
+    .awaiting__box_my-key, .awaiting__box_new-key {
+        font-size: 25px;
+    }
+    .trade-info__message {
+        display: none;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .awaiting__box_way-delimiter  {
+        width: 45px;
+    }
+    .awaiting__box_way-circle {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .awaiting__box_my-key, .awaiting__box_new-key {
+        font-size: 18px;
+    }
+    .awaiting__box_new-key img {
+        width: 30px;
+    }
+    .way-circle1::before {
+        font-size: 14px;
+        margin-left: -51px;
+        width: 105px;
+    }
+    .way-circle2::before {
+        font-size: 14px;
+        margin-left: -36px;
+        width: 72px;
+    }
+    .way-circle3::before {
+        font-size: 14px;
+        margin-left: -39px;
+        width: 79px;
+    }
+    .way-circle4::before {
+        font-size: 14px;
+        margin-left: -48.5px;
+        width: 95px;
+    }
+    .awaiting__box_way {
+        margin-top: 35px;
+        margin-bottom: 105px;
+
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 850px) {
+    .agree__box_btn-confirm {
+        width: 304px;
+        margin-right: 23px;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .awaiting, .agree, .wallet {
+        margin-top: 105px;
+    }
+    .progress-text {
+        font-size: 12px;
+    }
+    .progress-img {
+        width: 30px;
+        height: 30px;
+    }
+    .exchange__currency-value {
+        font-size: 28px;
+    }
+    .box-title {
+        font-size: 25px;
+    }
+    .wallet__box-subtitle, .agree__box-subtitle {
+        font-size: 18px;
+    }
+    .main__crypto_field {
+        height: 52px;
+    }
+    .main__crypto_field-drop {
+        top: 55px;
+    }
+    .wallet__box-change {
+        display: none;
+    }
+    .wallet__box_rate-text, .wallet__box_rate-value{
+        font-size: 16px;
+    }
+    .input-test,  .input-test::placeholder{
+        height: 52px;
+        font-size: 12px;
+        padding: 0 15px;
+    }
+    main {
+        height: 1100px;
+    }
+    .exchange-box {
+        padding: 40px 24px;
+    }
+    .agree__box-swap, .agree__box-key {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .agree__box-time {
+        font-size: 16px;
+    }
+    .agree__box-check+label {
+        font-size: 18px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 605px) {
+    main {
+        height: 965px;
+    }
+    .progress-img {
+        margin-right: 6px;
+    }
+    .progress-arrow {
+        margin-right: 20px;
+        margin-left: 6px;
+    }
+    
+    .wallet__box-btn {
+        font-size: 16px;
+        height: 52px;
+        line-height: 52px;
+        margin-top: 40px;
+    }
+    .agree__box_btn-confirm {
+        width: 240px;
+        height: 56px;
+        font-size: 16px;
+    }
+    .agree__box_btn-back {
+         width: 130px;
+         height: 56px;
+         font-size: 16px;
+    }
+    .exchange__currency-value {
+        margin-left: 16px;
+    }
+    .agree__box-key {
+        font-size: 13px;
+    }
+    .awaiting__box_my-key, .awaiting__box_new-key {
+        font-size: 14px;
+        word-break: break-all;
+        margin-top: 16px;
+    }
+    .awaiting__box_new-key img {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    // .awaiting__box_new-key {
+    //     word-break: break-all;
+    // }
+    .awaiting__box-subtitle {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    .exchange__currency {
+        margin-top: 20px;
+    }
+    .agree__box_currency img {
+        width: 30px;
+    }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 480px) {
+
+    .progress-img {
+        width: 20px;
+        height: 20px;
+    }
+    .progress-arrow {
+        width: 16px;
+        height: 14px;
+        margin-right: 10px;
+    }
+    .progress-text {
+        font-size: 7px;
+    }
+    main {
+        padding-top: 27px;
+        height: 745px;
+    }
+    .agree, .awaiting, .wallet {
+        margin-top: 45px;
+    }
+    .box-title {
+        font-size: 18px;
+    }
+    .wallet__box-subtitle, .agree__box-subtitle {
+       font-size: 14px;
+       margin-top: 32px;
+    }
+    .wallet__box_rate-text, .wallet__box_rate-value{
+        font-size: 14px;
+    }
+    .agree__box_btn-confirm {
+        width: 210px;
+    }
+    .agree__box_btn-back {
+         width: 103px;
+    }
+    .agree__box-swap {
+        font-size: 13px;
+        margin-bottom: 29px;
+    }
+    .exchange__currency {
+        margin-top: 17px;
+    }
+    .agree__box_currency img {
+        width: 27px;
+        height: 27px;
+    }
+    .agree__box-check+label {
+        font-size: 14px;
+        margin: 50px 0;
+    }
+    .exchange__currency-value {
+        font-size: 22px;
+    }
+    .agree__box-key {
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .agree__box_btn-back {
+        width: 93px;
+    }
+    .agree__box_btn-confirm{
+        width: 175px;
+    }
+    .way-circle1::before {
+        font-size: 11px;
+        margin-top: 15px;
+        margin-left: -41px;
+        width: 84px;
+    }
+    .way-circle2::before {
+        font-size: 11px;
+        margin-top: 15px;
+        margin-left: -28px;
+        width: 59px;
+    }
+    .way-circle3::before {
+        font-size: 11px;
+        margin-top: 15px;
+        margin-left: -30px;
+        width: 54px;
+    }
+    .way-circle4::before {
+        font-size: 11px;
+        margin-top: 15px;
+        margin-left: -39.5px;
+        width: 73px;
+    }
+    .awaiting__box_way-circle {
+        width: 30px;
+        height: 30px;
+    }
+    .awaiting__box_way-delimiter {
+        width: 25px;
+    }
+}

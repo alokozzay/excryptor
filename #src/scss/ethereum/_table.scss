@@ -1,0 +1,154 @@
+.table {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    &__box {
+        max-width: 1200px;
+        background: #26262E;
+        border-radius: 16px;
+        margin-bottom: 60px;
+        &_top {
+            height: 64px;
+            border-bottom: 1px solid #37353D;
+        }
+        &_height {
+            height: 72px;
+        }
+    }
+    &__boxFlex{
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        &-numbertop {
+            line-height: 64px;
+            text-align: center;
+            font-size: 16px;
+            color: #797A81;
+        }
+        &-buytop {
+            line-height: 64px;
+            font-size: 16px;
+            color: #797A81;
+        }
+        &-pricetop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-changetop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-volumetop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-actiontop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-global {
+            line-height: 72px;
+            font-weight: 500;
+            font-size: 16px;
+            text-align: right;
+        }
+        &-number{
+            color: #999AA3;
+            text-align: center; 
+        }
+        &-buy {
+            text-align: left;
+        }
+        &-buyimage {margin-right: 16px;}
+        &-buy-btc{
+            &::after{
+                content: "BTC";
+                color: #999AA3;
+                margin-left: 6px;
+            }}
+        &-buy-usdt{
+                &::after{
+                content: "USDT";
+                color: #999AA3;
+                margin-left: 6px;
+            }}
+        &-buy-eth{
+            &::after{
+            content: "ETH";
+            color: #999AA3;
+            margin-left: 6px;
+        }}      
+        &-change-down {
+            color: #FF4B32;
+        }     
+        &-change {
+            color: #16C784;
+            &-up::before {
+                content: url(../img/up.svg);
+                margin-right: 8px;
+            }
+            &-down::before {
+                content: url(../img/down.svg);
+                margin-right: 8px;
+            }
+        }
+        &-volume::after {content: "USD"; color: #999AA3; margin-left: 6px;}
+        &-action {
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            line-height: 34px;
+            font-family: IBMPlexMono Sans;
+        }
+       &_btn {
+           float: right;
+           width: 108px;
+           height: 34px;
+           background: #31333B;
+            /* Turquoise */
+            border: 1.2px solid #60CCE2;
+            box-sizing: border-box;
+            border-radius: 10px;
+       }
+    }
+
+    &__number {width: 100px;}
+    &__buy {width: 320px; display: flex; align-items: center;}
+    &__price{width: 195px;}
+    &__change{width: 179px;}
+    &__volume{width: 200px;}
+    &__action{width: 224px;}
+    &__btn {
+        text-align: center;
+        
+    }
+    &-btn {
+        display: inline-block;
+        padding: 19px 56px;
+        font-family: IBMPlexMono Sans;
+        font-weight: 600;
+        font-size: 18px;
+        /* Background */
+        background: #1D1B22;
+        /* Orange */
+        border: 1px solid #FD7B01;
+        box-sizing: border-box;
+        border-radius: 12px;
+        transition: all .4s ease;
+        &:hover {
+            border-color: #fe7b019f;
+            background-color: #fe7b019f;
+            color: #fff;
+        }
+        &-text {color: #FD7B01;}
+    }
+}
+

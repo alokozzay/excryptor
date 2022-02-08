@@ -1,0 +1,32 @@
+<section class="wallet">
+    <div class="container">
+        <div class="wallet__box exchange-box">
+            <p class="box-title">Exchange Crypto</p>
+            <p class="wallet__box-subtitle">You send</p>
+            <div class="main__crypto_field main__crypto_field-send">
+                <div class="main__crypto_field-icon"></div>
+                <input type="text" class="main__crypto_input" disabled="disabled">
+            </div>
+
+            <div class="wallet__box_receive">
+                <p class="wallet__box-subtitle">You receive</p>
+                <button style="background: url('../img/change-exchange.svg');" class="wallet__box-change">
+            </div>
+            
+            <div class="main__crypto_field main__crypto_field-get">
+                <div class="main__crypto_field-icon"></div>
+                <input type="text" class="main__crypto_input" disabled="disabled">
+            </div>
+            
+            <div class="wallet__box_rate">
+                <p class="wallet__box_rate-text">Exchange rate</p> 
+                <p class="wallet__box_rate-value"></p> 
+            </div>
+            
+            <p class="wallet__box-subtitle">Recipient Wallet</p>
+            <input type="text" class="input-test">
+            
+            <button class="wallet__box-btn" disabled onclick="nextPage(); saveData(this)">Exchange now</button>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,126 @@
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1180px) {
+    .block__mail_box {
+        max-width: 300px;
+    }
+    .block__mail-title {
+        max-width: 300px;
+    }
+    .block__mail_box-social {
+        max-width: 300px;
+    }
+    .block__form-btn {
+        width: 200px;
+    }
+    .block__mail-title {
+        margin-bottom: 37px;
+    }
+
+}
+@media only screen and (max-width: 1011px) {
+    .block__mail-title {
+        margin-bottom: 63px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 940px) {
+    .block {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .block__form_box {
+        margin-bottom: 80px;
+        
+    }
+    .block__form-btn {
+        width: 100%;
+    }
+    .block__mail_box {
+        max-width: 424px;
+        padding: 24px;
+    }
+    .block__mail-title {
+        max-width: 424px;
+    }
+    .block__mail_box-social {
+        max-width: 424px;
+    }
+    .block__mail {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .block__mail {
+        width: 100%;
+    }
+    .block__mail_box, .block__mail_box-social {
+        max-width: 100%;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 690px) {
+    
+    .block__mail-title {
+        margin-bottom: 40px;
+    }
+    .main-title {
+        font-size: 46px;
+        margin-top: 72px;
+        margin-bottom: 97px;
+    }
+    .block__mail-title {
+        font-size: 22px;
+    }
+    .block__form-title {
+        font-size: 22px;
+    }
+    .block__from_btnFlex {
+       flex-direction: column;
+    }
+    .block__form-btn{
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .main {
+        margin-bottom: 80px;
+    }
+    .block__form-title {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+    .block__mail-title {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+    .block__mail_box-mail {
+        font-size: 18px;
+    }
+    .main-title {
+        font-size: 32px;
+    }
+    .block__form_box {
+        padding: 20px;
+    }
+    .block__mail_box {
+        padding: 24px;
+    }
+    .block__mail_box-social {
+        padding: 24px;
+    }
+    .block__form-btn {
+        width: 100%;
+    }
+
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 450px) {
+    .block__mail-title {
+        max-width: 320px;
+    }
+}

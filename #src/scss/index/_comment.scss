@@ -1,0 +1,54 @@
+.comment {
+    margin-bottom: 120px;
+    &__slider {
+        margin-bottom: 60px;
+        &_box {
+            margin: 0 30px;
+            width: 460px;
+            height: 292px;
+            background: #26262E;
+            border-radius: 16px;
+            padding: 40px;
+        }
+        &_boxtop {
+            display: flex;
+            align-items: center;
+            &-user {margin-right: 24px;}
+            margin-bottom: 24px;
+        }
+        &_info {
+            &-title {
+                font-weight: 500;
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+            &-text {
+                font-size: 16px;
+                line-height: 150%;
+                color: #BFC1CC;
+            }
+        }
+    }
+    &__grade {
+        
+        &-trustpilot {
+            display: block;
+            margin: 0 auto;
+        }
+        &-image {
+            display: block;
+            margin: 0 auto 12px auto;
+        }
+        &_info {
+            display: flex;
+            justify-content: center;
+            margin: 16px 0;}
+        &-text {
+            font-size: 16px;
+            color: #999AA3;
+        }
+        &-core {margin-right: 12px;}
+        &-reviews {margin-left: 12px;}
+        &-stars{display: block;margin: 0 auto;}
+    }
+}

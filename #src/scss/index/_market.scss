@@ -1,0 +1,173 @@
+.market {
+  margin-bottom: 200px;
+  &__box {
+    max-width: 1200px;
+    // height: 792px;
+    background: #26262e;
+    border-radius: 16px;
+    margin-bottom: 60px;
+    &_top {
+      height: 64px;
+      border-bottom: 1px solid #37353d;
+    }
+    &_height {
+      height: 72px;
+    }
+  }
+  &__boxFlex {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    &-numbertop {
+      line-height: 64px;
+      text-align: center;
+      font-size: 16px;
+      color: #797a81;
+    }
+    &-buytop {
+      line-height: 64px;
+      font-size: 16px;
+      color: #797a81;
+    }
+    &-pricetop {
+      line-height: 64px;
+      font-size: 16px;
+      text-align: right;
+      color: #797a81;
+    }
+    &-changetop {
+      line-height: 64px;
+      font-size: 16px;
+      text-align: right;
+      color: #797a81;
+    }
+    &-volumetop {
+      line-height: 64px;
+      font-size: 16px;
+      text-align: right;
+      color: #797a81;
+    }
+    &-actiontop {
+      line-height: 64px;
+      font-size: 16px;
+      text-align: right;
+      color: #797a81;
+    }
+    &-global {
+      line-height: 72px;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: right;
+
+      span {
+        color: #999aa3;
+      }
+    }
+    &-number {
+      color: #999aa3;
+      text-align: center;
+    }
+    &-buy {
+      text-align: left;
+    }
+    &-buyimage {
+      margin-right: 16px;
+      width: 24px;
+      height: 24px;
+    }
+    &-buy-usdt {
+      span {
+        color: #999aa3;
+      }
+    }
+    &-buy-eth {
+    }
+    &-price {
+      span {
+        color: #999aa3;
+      }
+    }
+    &-change-down {
+      color: #ff4b32;
+    }
+    &-change {
+      color: #16c784;
+    }
+    &-volume span {
+      color: #999aa3;
+    }
+    &-action {
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      line-height: 33px;
+      font-family: IBMPlexMono Sans;
+    }
+    &_btn {
+      color: #60CCE2;
+      float: right;
+      width: 108px;
+      height: 34px;
+      background: #31333b;
+      /* Turquoise */
+      border: 1.2px solid #60cce2;
+      box-sizing: border-box;
+      border-radius: 10px;
+    }
+  }
+
+  &__number {
+    width: 100px;
+  }
+  &__buy {
+    width: 320px;
+    display: flex;
+    align-items: center;
+  }
+  &__price {
+    width: 195px;
+  }
+  &__change {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+  &__volume {
+    width: 238px;
+  }
+  &__action {
+    width: 188px;
+    padding-right: 20px;
+  }
+  &__btn {
+    text-align: center;
+    &-text {
+      color: #fd7b01;
+    }
+  }
+  &-btn {
+    display: inline-block;
+    padding: 19px 56px;
+    font-family: IBMPlexMono Sans;
+    font-weight: 600;
+    font-size: 18px;
+    /* Background */
+    background: #1d1b22;
+    /* Orange */
+    border: 1px solid #fd7b01;
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+}
+.redText {
+  color: #ff4b32;
+}
+.greenText {
+  color: #16c784;
+}

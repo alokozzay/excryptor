@@ -1,0 +1,70 @@
+<section class="main">
+    <div class="container">
+        <h1 class="main-title">Contacts</h1>
+        <div class="block">
+            <div class="block__mail">
+                <p class="block__mail-title">
+                    If you have any questions when using Simple Swap, we are ready to answer them
+                </p>
+                <div class="block__mail_box">
+                    <p class="block__mail_box-title">For service issues:</p>
+                    <p class="block__mail_box-mail">support@excryptor.io</p>
+                </div>
+                <div class="block__mail_box">
+                    <p class="block__mail_box-title">For service issues:</p>
+                    <p class="block__mail_box-mail">marketing@excryptor.io</p>
+                </div>
+                <div class="block__mail_box">
+                    <p class="block__mail_box-title">For service issues:</p>
+                    <p class="block__mail_box-mail">hello@excryptor.io</p>
+                </div>
+                <div class="block__mail_box-social">
+                    <p class="block__mail_box-social-title">Social media</p>
+                    <a href="https://www.facebook.com/" class="block__mail_box-social-link"><img src="./img/facebook.svg" alt="faccebok" class="block__mail_box-social-icon"></a>
+                    <a href="https://twitter.com" class="block__mail_box-social-link"><img src="./img/twitter.svg" alt="twitter" class="block__mail_box-social-icon"></a>
+                    <a href="https://www.instagram.com/" class="block__mail_box-social-link"><img src="./img/instagram.svg" alt="instagram" class="block__mail_box-social-icon"></a>
+                    <a href="https://www.youtube.com" class="block__mail_box-social-link"><img src="./img/youtube.svg" alt="youtube" class="block__mail_box-social-icon"></a>
+                </div>
+            </div>
+            <div class="block__form">
+                <p class="block__form-title">If you still have questions, please fill out the form:</p>
+                <div class="block__form_box"> 
+                    <form onsubmit="return checkCheckBoxes(this);"> 
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="EX Criptor">
+                        <input type="hidden" name="admin_email" value="support@excryptor.io">
+                        <input type="hidden" name="form_subject" value="Feedback">
+                        <!-- END Hidden Required Fields -->
+
+                        <input class="block__from-email" type="email" name="E-mail" placeholder="Your email">
+                        <input class="block__from-name" type="text" name="Name" placeholder="You name">
+                        <input class="block__from-subject" type="text" name="Message subject" placeholder="Message subject">
+                        <textarea class="block__from-message" name="Message" placeholder="Your message"></textarea>
+                        <input class="block__from-check" type="checkbox" id="check" name="conditionAgreement" value="yes">
+                        <label class="block__from-text" for="check">I agree with the privacy policy and consent to the processing of my personal data</label>
+                        <div class="block__from_btnFlex">
+                            <button class="block__form-btn type="submit">Send now</button>
+                            <div class="block__form_security">
+                                <img class="block__form_security-img" src="./img/form.svg" alt="form">
+                                <p class="block__form_security-text">We guarantee the safety and security of your data</p>
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" language="JavaScript">
+    function checkCheckBoxes(theForm) {
+        if (
+        theForm.conditionAgreement.checked == false) 
+        {
+            alert ('You didn\'t choose any of the checkboxes!');
+            return false;
+        } else {    
+            return true;
+        }
+        
+    }
+</script>

@@ -1,0 +1,374 @@
+
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    .stat__block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stat__boxbig {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    // .stat_blockNoFlex {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //     width: 100%;
+    // }
+    .stat_blockNoFlex {
+        width: 100%;
+    }
+    .stat__boxsmall {
+        width: 100%;
+    }
+    .stat__boxmedium {
+        width: 100%;
+    }
+    // .stat__boxmedium_info, .stat__boxsmall_done {
+    //     justify-content: center;
+    // }
+    .stat__boxbig-price1 {  
+        right: 70%;
+    }
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1050px) { 
+    .main {
+        flex-direction: column;
+    }
+    .main__info {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .main__info-subtitle {
+        margin: 0 auto;
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+    .main__info-title::before {
+        top: 0;
+    }
+    .main__info::before {
+        background: rgba(255,255,255,.2);
+    }
+    .stat__boxbig-price1 {  
+        right: 63%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .market__change {
+        display: none;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .stat__boxbig-price1 {  
+        right: 60%;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .stat {
+        &__boxbig {
+            position: relative;
+            &_field {
+              height: 95px;
+              width: 100%;
+              margin-bottom: 20px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+              &:last-child::before {
+                height: 0;
+              }
+              &::before {
+                content: "";
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                background-color: #37353d;
+                bottom: -8px;
+              }
+            }
+        }
+    }
+    .advantages__top {
+        margin-bottom: 20px;
+    }
+    .advantages__block:last-child {
+        margin-top: 24px;
+    }
+    .comment {
+        margin-bottom: 80px;
+    }
+    .main__crypto {
+        height: 100%;
+    }
+    .main__info::before {
+        opacity: 0;
+        width: 300px;
+        height: 300px;
+    }
+    .market {
+        display: none;
+    }
+    .advantages__block {
+        display: block;
+    }
+    .advantages__boxbigmar {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .advantages__boxsmallmar {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .advantages__boxsmall {
+        max-width: 100%;
+        padding: 24px;
+    }
+    .advantages__boxbig {
+        max-width: 100%;
+        padding: 24px;
+    }
+    .advantages__block-icon {
+        width: 56px;
+        height: 56px;
+        padding: 14px;
+        margin-right: 20px;
+    }
+    .advantages__block-image {
+        width: 28px;
+    }
+    .advantages__block-title {
+        font-size: 18px;
+    }
+    .advantages__block-info {
+        font-size: 16px;
+    }
+    .title {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+    .main__info-title {
+        margin: 0 auto;
+        max-width: 343px;
+        font-size: 46px;
+    }
+    .main__info-subtitle {
+        font-size: 16px;
+    }
+    .main {
+        margin-bottom: 100px;
+    }
+    .stat__boxbig {
+        height: 100%;
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+    .stat__boxbig_field {
+        position: relative;
+        height: 131px;
+    }
+    .stat__boxbig_wellbefore {
+        left: 0;
+        width: 100%;
+    }
+    .stat__boxbig_wellafter {
+        left: 0;
+        bottom: 15px;
+        width: 100%;
+    }
+    .stat__boxbig_arrow {
+        display: none;
+    }
+    .stat__boxbig-price {
+        position: absolute;
+        right: 28px;
+    }
+    .stat__boxbig-price1 {
+        
+        right: 28px;
+    }
+    .stat__block-title {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+    .stat__boxbig_data {
+        justify-content: start;
+        font-size: 14px;
+    }
+    .stat__boxbig-month {
+        margin-right: 12px;
+    }
+    .stat__boxbig-pricetop::after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/way.svg);
+        width: 29px;
+        height: 61px;
+        right: -25px;
+        top: 15px;
+        z-index: 2;
+    }
+    .stat__boxsmall_image-icon {
+        width: 28px;
+    }
+    .stat__boxsmall_image {
+        width: 56px;
+        height: 56px;
+    }
+    .stat__boxsmall_info-number {
+        font-size: 18px;
+    }
+    .stat__boxsmall_info-text {
+        font-size: 16px;
+    }
+    .stat__boxsmall {
+        padding: 24px;
+        width: 100%;
+        height: 100%;
+    }
+    .stat__boxmedium_info-progress-bar {
+        width: 120px;
+        height: 120px;
+    }
+    .stat__boxmedium_info-progress-bar svg {
+        width: 120px;
+        height: 120px;
+    }
+    .stat__boxmedium_time-number {
+        font-size: 16px;
+    }
+    .stat__boxmedium_time-text {
+        font-size: 12px;
+    }
+    .stat__boxmedium_time {
+        width: 100%;
+        height: 48px;
+        padding: 8px 16px;
+        background: rgba(255,255,255,.04);
+        border-radius: 12px;
+    }
+    .stat__boxmedium_info-progress-text span:first-child {
+        font-size: 18px;
+    }
+    .stat__boxmedium_info-progress-text span:last-child {
+        font-size: 12px;
+    }
+    .stat__boxmedium_info-progress-text {
+        padding-bottom: 20px;
+    }
+    .stat__boxmedium {
+        width: 100%;
+        height: 100%;
+        padding: 24px;
+    }
+    .stat__boxsmall {
+        margin-bottom: 24px;
+    }
+    .comment__slider_info-text, .main__crypto-subtitle, .main__crypto-exchange, .main__crypto-info_results {
+        font-size: 14px;
+    }
+    .comment__slider_info-title, .main__crypto-btn {
+        font-size: 16px;
+    }
+    .stat, .advantages {
+        margin-bottom: 120px;
+    }
+    .main__crypto {
+         padding: 40px 24px;
+    }
+    .main__crypto-title {
+        font-size: 18px;
+    }
+    
+    .main__info-title::before {
+        background: url(../img/vector-main.svg);
+        background-repeat: no-repeat;
+        width: 128px;
+        height: 266px;
+        left: auto;
+        right: 0;
+        top: -36px;
+    }
+    .stat__boxmedium_info-progress::after {
+        left: 1px;
+        bottom: 47px;
+        width: 6px;
+        height: 4px;
+    }
+    .stat__boxmedium_info-progress-text::after {
+        left: 92px;
+        bottom: 16px;
+        width: 5px;
+        height: 5px;
+    }
+}
+@media only screen and (max-width: 515px) {
+    .main__crypto {
+        width: 100%;
+    }
+    .main__crypto-btn {
+        width: 100%;
+    }
+    .container-main-index {
+        padding: 0;
+    }
+    .main__info {
+        padding: 0 15px;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 505px) {
+    .main__crypto_drop-btn {
+        width: 190px;
+    }
+    .main {
+        margin-top: 48px;
+    }
+    .main__crypto-btn {
+        width: 100%;
+        height: 58px;
+    }
+    .main__crypto-subtitle-sec, .main__crypto-subtitle-first, .main__crypto, .main__crypto_field {
+        max-width: 100%;
+    }
+    .main__info-link {
+        font-size: 16px;
+        padding: 20px 38px 20px 65px;
+    }
+    .main__info-link::before {
+        background: url(../img/shield2.svg);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+        top: 20px;
+        margin-left: -25px;
+    }
+    .main__info-subtitle {
+        width: 100%;
+        text-align: left;
+    }
+    .main__info-title {
+        font-size: 32px;
+        text-align: left;
+        margin: 0;
+    }
+    .main__crypto-info_results {
+        font-size: 12px;
+    }
+    .comment__slider_boxtop-user {
+        display: none;
+    }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 360px) {
+    .stat__boxbig-name, .stat__boxbig-price {
+        font-size: 14px;
+    }
+}
+.main__crypto_field-icon {
+    right: 89px;
+}

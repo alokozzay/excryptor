@@ -1,0 +1,76 @@
+.main {
+    margin-bottom: 120px;
+    &-title{
+        margin-top: 120px;
+        margin-bottom: 81px;
+        font-family: TTFirsNeue Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 110%;
+        position: relative;
+        &::after {
+            content: "LTC";
+            font-family: TTFirsNeue Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 72px;
+            line-height: 110%;
+            color: #797A81;
+            margin-left: 20px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: 100%;
+            background-color: #37353D;
+            margin-top: 32px;
+        }
+    }
+    &-text {
+        font-family: TTFirsNeue Sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        margin-left: 120px;
+        margin-bottom: 28px;
+    }
+    &-text-last{
+        margin-bottom: 120px;
+    }
+    
+    &__blockinfo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        &_box {
+            width: 282px;
+            background: linear-gradient(180deg, #212126 0%, #26262E 100%);
+            border-radius: 16px;
+            padding: 32px 0 32px 32px;
+            display: flex; 
+        }
+        &-icon {
+            padding: 10px;
+        }
+        &_image {
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 12px;
+            margin-right: 12px;
+        }
+        &-name {
+            color: #797A81;
+            margin-bottom: 8px;
+        }
+        &-value {
+            font-weight: 500;
+        }
+    }
+
+}
+.table-mobile__block-btn, .table__text-action {
+    color: #60cce2;
+}

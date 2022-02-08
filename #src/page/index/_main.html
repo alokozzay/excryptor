@@ -1,0 +1,59 @@
+<section class="main-section">
+    <div class="container container-main-index">
+        <div class="main">
+            <div class="main__info">
+                <h1 class="main__info-title"><span class="main__info-title-orange">Anonymous</span> cryptocurrency exchange</h1>
+                <p class="main__info-subtitle">Fast and secure way to exchange and purchase 150+ cryptocurrencies. 24/7 live-chat support.</p>
+                <a href="#" class="main__info-link">Create recommended wallet</a>
+            </div>
+            <div class="main__crypto">
+                <h3 class="main__crypto-title">Exchange Crypto</h3>
+                <p class="main__crypto-subtitle main__crypto-subtitle-first">You send</p>
+                <p class="main__crypto-subtitle-info"></p>
+                <!-- поле №1 -->
+                <div class="main__crypto_field main__crypto_field-send">
+                    <div class="main__crypto_field-icon"></div>
+                    <p class="main__crypto_field-name"></p>
+                    <input type="number" class="main__crypto_input">
+                    <button class="main__crypto_drop-btn" onclick="dropCoins(this)">
+                        <p></p>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2:35)">
+                            <path d="M5.3902 7.7779L9.84025 3.32777C9.94325 3.22485 10 3.08745 10 2.94095C10 2.79445 9.94325 2.65705 9.84025 2.55412L9.51261 2.2264C9.29911 2.01315 8.95212 2.01315 8.73895 2.2264L5.00207 5.96328L1.26105 2.22225C1.15804 2.11933 1.02072 2.0625 0.874302 2.0625C0.727717 2.0625 0.590401 2.11933 0.487312 2.22225L0.159754 2.54998C0.0567474 2.65298 -3.18131e-08 2.7903 -3.82169e-08 2.9368C-4.46208e-08 3.0833 0.0567474 3.2207 0.159754 3.32363L4.61386 7.7779C4.7172 7.88107 4.85516 7.93774 5.00183 7.93741C5.14906 7.93774 5.28695 7.88107 5.3902 7.7779Z" fill="#999AA3"/>
+                            </g>
+                        </svg>                            
+                    </button>
+                    <ul class="main__crypto_field-drop"></ul>
+                </div>
+                <!-- --- -->
+
+                <div class="main__crypto-subtitle-sec">
+                    <p class="main__crypto-subtitle">You receive</p>
+                    <button class="main__crypto-change" style="background: url('./img/change.svg');"></button>
+                </div>
+                
+                <!-- поле №2 -->
+                <div class="main__crypto_field main__crypto_field-get">
+                    <div class="main__crypto_field-icon"></div>
+                    <p class="main__crypto_field-name"></p>
+                    <input type="number" class="main__crypto_input" disabled="disabled">
+                    <button class="main__crypto_drop-btn" onclick="dropCoins(this)">
+                        <p></p>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2:35)">
+                            <path d="M5.3902 7.7779L9.84025 3.32777C9.94325 3.22485 10 3.08745 10 2.94095C10 2.79445 9.94325 2.65705 9.84025 2.55412L9.51261 2.2264C9.29911 2.01315 8.95212 2.01315 8.73895 2.2264L5.00207 5.96328L1.26105 2.22225C1.15804 2.11933 1.02072 2.0625 0.874302 2.0625C0.727717 2.0625 0.590401 2.11933 0.487312 2.22225L0.159754 2.54998C0.0567474 2.65298 -3.18131e-08 2.7903 -3.82169e-08 2.9368C-4.46208e-08 3.0833 0.0567474 3.2207 0.159754 3.32363L4.61386 7.7779C4.7172 7.88107 4.85516 7.93774 5.00183 7.93741C5.14906 7.93774 5.28695 7.88107 5.3902 7.7779Z" fill="#999AA3"/>
+                            </g>
+                        </svg>                            
+                    </button>
+                    <ul class="main__crypto_field-drop"></ul>
+                </div>
+                <!-- ---  -->
+                <div class="main__crypto-info">
+                    <p class="main__crypto-exchange">Exchange rate</p>
+                    <p class="main__crypto-info_results"></p> 
+                </div>
+                <button class="main__crypto-btn">Exchange now</button>
+            </div>
+        </div>
+    </div>
+</section>

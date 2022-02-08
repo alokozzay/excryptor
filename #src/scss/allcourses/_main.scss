@@ -1,0 +1,167 @@
+.main__title {
+    font-family: TTFirsNeue Sans; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 110%;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 245px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 100%;
+        left: 0;
+        margin-top: 40px;
+        background-color: #37353D;
+    }
+}
+.main {
+    margin-bottom: 200px;
+    &__box {
+        max-width: 1200px;
+        background: #26262E;
+        border-radius: 16px;
+        margin-bottom: 60px;
+        &_top {
+            height: 64px;
+            border-bottom: 1px solid #37353D;
+        }
+        &_height {
+            height: 72px;
+        }
+    }
+    &__change {width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    
+        svg {
+          margin-right: 8px;
+        }}
+    &__boxFlex{
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        &-numbertop {
+            line-height: 64px;
+            text-align: center;
+            font-size: 16px;
+            color: #797A81;
+        }
+        &-buytop {
+            line-height: 64px;
+            font-size: 16px;
+            color: #797A81;
+        }
+        &-pricetop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-changetop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-volumetop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-actiontop {
+            line-height: 64px;
+            font-size: 16px;
+            text-align: right;
+            color: #797A81;
+        }
+        &-global {
+            line-height: 72px;
+            font-weight: 500;
+            font-size: 16px;
+            text-align: right;
+
+            span {
+                content: "BTC";
+                color: #999AA3;
+                margin-left: 6px;
+            }
+        }
+        &-number{
+            color: #999AA3;
+            text-align: center; 
+        }
+        &-buy {
+            text-align: left;
+        }
+        &-buyimage {margin-right: 16px; width: 32px; height: 32px;}
+        &-price {
+            
+        }   
+        &-change-down {
+            color: #FF4B32;
+        }     
+        &-change {
+            color: #16C784;
+        }
+        &-action {
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
+            font-family: IBMPlexMono Sans;
+        }
+       &_btn {
+           float: right;
+           width: 108px;
+           height: 34px;
+           background: #31333B;
+            /* Turquoise */
+            border: 1.2px solid #60CCE2;
+            box-sizing: border-box;
+            border-radius: 10px;
+       }
+    }
+
+    &__number {width: 100px;}
+    &__buy {width: 320px; display: flex; align-items: center;}
+    &__price{width: 195px; padding-right: 20px;}
+    &__change{width: 179px;}
+    &__volume{width: 238px;}
+    &__action{width: 188px; padding-right: 20px;}
+    &__btn {
+        text-align: center;
+        &-text {color: #FD7B01;}
+    }
+    &-btn {
+        display: inline-block;
+        padding: 19px 56px;
+        font-family: IBMPlexMono Sans;
+        font-weight: 600;
+        font-size: 18px;
+        /* Background */
+        background: #1D1B22;
+        /* Orange */
+        border: 1px solid #FD7B01;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+}
+.main__text-action {
+    color: #60cce2;
+}
+
+.redText {
+    color: #FF4B32;
+}
+
+.greenText {
+    color: #16C784;
+}

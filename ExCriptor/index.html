@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/index.min.css" />
+    <link rel="stylesheet" href="./css/slider.min.css" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <header class="header">
+    <div class="container header__flex">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="./img/logo.svg" alt="logo" class="header__logo-pc">
+                <!-- <img src="./img/logo-mobile.png" alt="logo" class="header__logo-mobile"> -->
+            </a>
+        </div>
+        <div class="mobile-menu">
+            <span></span>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a href="HowItWorks.html" class="header__list_item">How it works</a></li>
+                <li class="header__list-lidropping">
+                    <a href="#" class="header__list_item header__list-dropping">Currencies</a>
+                    <ul class="header__sublist">
+                        <li><a href="allcourses.html" class="header__subitem">All courses</a></li>
+                        <li><a href="bitcoin.html" class="header__subitem">Bitcoin</a></li>
+                        <li><a href="ethereum.html" class="header__subitem">Ethereum</a></li>
+                        <li><a href="litecoin.html" class="header__subitem">Litecoin</a></li>
+                    </ul>
+                </li>
+                <li><a href="faq.html" class="header__list_item">FAQ</a></li>
+                <li><a href="contacts.html" class="header__list_item">Contacts</a></li>
+            </ul>
+        </nav>
+        <button class="header__btn">English</button>
+    </div>
+</header> <section class="main-section">
+    <div class="container container-main-index">
+        <div class="main">
+            <div class="main__info">
+                <h1 class="main__info-title"><span class="main__info-title-orange">Anonymous</span> cryptocurrency exchange</h1>
+                <p class="main__info-subtitle">Fast and secure way to exchange and purchase 150+ cryptocurrencies. 24/7 live-chat support.</p>
+                <a href="#" class="main__info-link">Create recommended wallet</a>
+            </div>
+            <div class="main__crypto">
+                <h3 class="main__crypto-title">Exchange Crypto</h3>
+                <p class="main__crypto-subtitle main__crypto-subtitle-first">You send</p>
+                <p class="main__crypto-subtitle-info"></p>
+                <!-- поле №1 -->
+                <div class="main__crypto_field main__crypto_field-send">
+                    <div class="main__crypto_field-icon"></div>
+                    <p class="main__crypto_field-name"></p>
+                    <input type="number" class="main__crypto_input">
+                    <button class="main__crypto_drop-btn" onclick="dropCoins(this)">
+                        <p></p>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2:35)">
+                            <path d="M5.3902 7.7779L9.84025 3.32777C9.94325 3.22485 10 3.08745 10 2.94095C10 2.79445 9.94325 2.65705 9.84025 2.55412L9.51261 2.2264C9.29911 2.01315 8.95212 2.01315 8.73895 2.2264L5.00207 5.96328L1.26105 2.22225C1.15804 2.11933 1.02072 2.0625 0.874302 2.0625C0.727717 2.0625 0.590401 2.11933 0.487312 2.22225L0.159754 2.54998C0.0567474 2.65298 -3.18131e-08 2.7903 -3.82169e-08 2.9368C-4.46208e-08 3.0833 0.0567474 3.2207 0.159754 3.32363L4.61386 7.7779C4.7172 7.88107 4.85516 7.93774 5.00183 7.93741C5.14906 7.93774 5.28695 7.88107 5.3902 7.7779Z" fill="#999AA3"/>
+                            </g>
+                        </svg>                            
+                    </button>
+                    <ul class="main__crypto_field-drop"></ul>
+                </div>
+                <!-- --- -->
+
+                <div class="main__crypto-subtitle-sec">
+                    <p class="main__crypto-subtitle">You receive</p>
+                    <button class="main__crypto-change" style="background: url('./img/change.svg');"></button>
+                </div>
+                
+                <!-- поле №2 -->
+                <div class="main__crypto_field main__crypto_field-get">
+                    <div class="main__crypto_field-icon"></div>
+                    <p class="main__crypto_field-name"></p>
+                    <input type="number" class="main__crypto_input" disabled="disabled">
+                    <button class="main__crypto_drop-btn" onclick="dropCoins(this)">
+                        <p></p>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2:35)">
+                            <path d="M5.3902 7.7779L9.84025 3.32777C9.94325 3.22485 10 3.08745 10 2.94095C10 2.79445 9.94325 2.65705 9.84025 2.55412L9.51261 2.2264C9.29911 2.01315 8.95212 2.01315 8.73895 2.2264L5.00207 5.96328L1.26105 2.22225C1.15804 2.11933 1.02072 2.0625 0.874302 2.0625C0.727717 2.0625 0.590401 2.11933 0.487312 2.22225L0.159754 2.54998C0.0567474 2.65298 -3.18131e-08 2.7903 -3.82169e-08 2.9368C-4.46208e-08 3.0833 0.0567474 3.2207 0.159754 3.32363L4.61386 7.7779C4.7172 7.88107 4.85516 7.93774 5.00183 7.93741C5.14906 7.93774 5.28695 7.88107 5.3902 7.7779Z" fill="#999AA3"/>
+                            </g>
+                        </svg>                            
+                    </button>
+                    <ul class="main__crypto_field-drop"></ul>
+                </div>
+                <!-- ---  -->
+                <div class="main__crypto-info">
+                    <p class="main__crypto-exchange">Exchange rate</p>
+                    <p class="main__crypto-info_results"></p> 
+                </div>
+                <button class="main__crypto-btn">Exchange now</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="advantages">
+    <div class="container">
+        <h2 class="advantages-title title">
+            Advantages<br>
+            of the exchanger
+        </h2>
+        <div class="advantages__block">
+            <div class="advantages__boxbig advantages__boxbigmar">
+                <div class="advantages__top">
+                    <div class="advantages__block-icon">
+                        <img src="./img/shield_advantages.svg" alt="icon" class="advantages__block-image">
+                    </div>
+                    <p class="advantages__block-title">Security<br>and protection</p>
+                </div>
+                <p class="advantages__block-info">
+                    Safety Complete absence of system failures. Our service
+                    is reliable and completely secure. The security of your operations and the protection of 
+                    your assets are the main focus of ExCryptor
+                </p>
+            </div>
+            <div class="advantages__boxsmall">
+                <div class="advantages__top">
+                    <div class="advantages__block-icon">
+                        <img src="./img/exchange_advantages.svg" alt="icon" class="advantages__block-image">
+                    </div>
+                    <p class="advantages__block-title">Instant<br>exchange</p>
+                </div>
+                <p class="advantages__block-info">
+                    Our service allows you to make an exchange as quickly as possible using the latest automated systems
+                </p>
+            </div>
+        </div>
+        <div class="advantages__block">
+            <div class="advantages__boxsmall advantages__boxsmallmar">
+                <div class="advantages__top">
+                    <div class="advantages__block-icon">
+                        <img src="./img/coins_advantages.svg" alt="icon" class="advantages__block-image">
+                    </div>
+                    <p class="advantages__block-title">A wide selection of coins</p>
+                </div>
+                <p class="advantages__block-info">
+                    Wide range of coins You can exchange any currency pair thanks to 
+                    our huge line of cryptocurrencies with over 300 cryptocurrencies
+                </p>
+            </div>
+            <div class="advantages__boxbig">
+                <div class="advantages__top">
+                    <div class="advantages__block-icon">
+                        <img src="./img/user_advantages.svg" alt="icon" class="advantages__block-image">
+                    </div>
+                    <p class="advantages__block-title">Your<br>Anonymity</p>
+                </div>
+                <p class="advantages__block-info">
+                    Is one of our main advantages among other crypto exchangers. 
+                    We do not require registration and provision of your personal 
+                    data for cryptocurrency exchange. No AML / KYC
+                </p>
+            </div>
+        </div>
+    </div>
+</section> <section class="market">
+    <div class="container">
+        <div class="market-title title">
+            Coin market cap
+        </div>
+        <div class="market__box">
+            <div class="market__box_top">
+                <div class="market__boxFlex">
+                    <div class="market__number">
+                        <p class="market__text-numbertop">#</p>
+                    </div>
+                    <div class="market__buy">
+                        <p class="market__text-buytop">Buy BTC for</p>
+                    </div>
+                    <div class="market__price">
+                        <p class="market__text-pricetop">Price</p>
+                    </div>
+                    <div class="market__change">
+                        <p class="market__text-changetop">Change (24H)</p>
+                    </div>
+                    <div class="market__volume">
+                        <p class="market__text-volumetop">24h volume</p>
+                    </div>
+                    <div class="market__action">
+                        <p class="market__text-actiontop">Action</p>
+                    </div>
+                </div>
+            </div>
+            <div class="market__box_info">
+                
+            </div>
+        </div>
+        <div class="market__btn">
+            <a href="./allcourses.html" class="market-btn"><p class="market__btn-text">Show all courses</p></a>
+        </div>
+    </div>
+</section>
+    <section class="stat">
+    <div class="container">
+        <h2 class="title">24-hour statistics</h2>
+
+        <div class="stat__block">
+            <div class="stat__boxbig">
+                <h3 class="stat__block-title">Recent exchanges</h3>
+            </div>
+            <div class="stat_blockNoFlex">
+                <div class="stat__boxsmall">
+                    <p class="stat__block-title">Completed transactions</p>
+                    <div class="stat__boxsmall_done">
+                        <div class="stat__boxsmall_image">
+                            <img src="./img/exchange-stat.svg" alt="icon" class="stat__boxsmall_image-icon">
+                        </div>
+                        <div class="stat__boxsmall_info">
+                            <p class="stat__boxsmall_info-number"></p>
+                            <p class="stat__boxsmall_info-text">Transactions execution</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat__boxmedium">
+                    <p class="stat__block-title">Average processing time</p>
+                    <div class="stat__boxmedium_info">
+                        <div class="stat__boxmedium_info-progress">
+                            <div class="stat__boxmedium_info-progress-bar"></div>
+                            <div class="stat__boxmedium_info-progress-text">
+                                <span></span>
+                                <span>Current speed</span>
+                            </div>
+                        </div>
+                        <div class="stat__boxmedium_static">
+                            <div class="stat__boxmedium_time">
+                                <p class="stat__boxmedium_time-number stat__boxmedium_time-min"><span></span> min</p>
+                                <p class="stat__boxmedium_time-text">Minimum speed</p>
+                            </div>
+                            <div class="stat__boxmedium_time">
+                                <p class="stat__boxmedium_time-number stat__boxmedium_time-max"><span></span> min</p>
+                                <p class="stat__boxmedium_time-text">Maximum speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <section class="comment">
+    <div class="container">
+        <h2 class="title">Customers about us</h2>
+        <div class="comment__slider">
+            <div class="comment__slider_box">
+                <div class="comment__slider_boxtop">
+                    <picture class="comment__slider_boxtop-user">
+                        <source srcset="./img/user-comment.webp" type="img/webp" >
+                        <img src="./img/user-comment.png" alt="user">
+                    </picture>
+                    <img src="./img/stars.svg" alt="" class="comment__slider_boxtop-stars">
+                </div>
+                <div class="comment__slider_info">
+                    <p class="comment__slider_info-title">Changelly is a class act!</p>
+                    <p class="comment__slider_info-text">I've been using this service for quite some time. Changelly is quick, reliably and the exchange rates are very good. No complaints here. 5-stars all the way!!</p>
+                </div>
+            </div>
+            <div class="comment__slider_box">
+                <div class="comment__slider_boxtop">
+                    <picture class="comment__slider_boxtop-user">
+                        <source srcset="./img/user-comment.webp" type="img/webp" >
+                        <img src="./img/user-comment.png" alt="user">
+                    </picture>
+                    <img src="./img/stars.svg" alt="" class="comment__slider_boxtop-stars">
+                </div>
+                <div class="comment__slider_info">
+                    <p class="comment__slider_info-title">Changelly is a class act!</p>
+                    <p class="comment__slider_info-text">I've been using this service for quite some time. Changelly is quick, reliably and the exchange rates are very good. No complaints here. 5-stars all the way!!</p>
+                </div>
+            </div>
+            <div class="comment__slider_box">
+                <div class="comment__slider_boxtop">
+                    <picture class="comment__slider_boxtop-user">
+                        <source srcset="./img/user-comment.webp" type="img/webp" >
+                        <img src="./img/user-comment.png" alt="user">
+                    </picture>
+                    <img src="./img/stars.svg" alt="" class="comment__slider_boxtop-stars">
+                </div>
+                <div class="comment__slider_info">
+                    <p class="comment__slider_info-title">Changelly is a class act!</p>
+                    <p class="comment__slider_info-text">I've been using this service for quite some time. Changelly is quick, reliably and the exchange rates are very good. No complaints here. 5-stars all the way!!</p>
+                </div>
+            </div>
+        </div>
+        <div class="comment__grade">
+                <img src="./img/Star.svg" alt="star" class="comment__grade-image">
+                <img src="./img/trustpilot.svg" alt="" class="comment__grade-trustpilot">
+                <div class="comment__grade_info">
+                    <p class="comment__grade-core comment__grade-text">Trustscore 9.7</p>
+                    <p class="comment__grade-line comment__grade-text">|</p>
+                    <p class="comment__grade-reviews comment__grade-text">1 276 reviews</p>
+                </div>
+                <img src="./img/stars.svg" alt="" class="comment__grade-stars">
+        </div>
+
+    </div>
+</section>
+    <script src="js/menu.js"></script>
+<!-- Footer  -->
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__top">
+            <div class="footer__top_contacts">
+                    <img src="./img/logo.svg" alt="" class="footer__top-logo">
+                <p class="footer__top-address">
+                    7832 Brookside Lane
+                    Hesperia, California CA 92345   
+                </p>
+                <div class="footer__top_messadgers">
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/facebook.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/twitter.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/instagram.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/youtube.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__top_navFlex">
+                <div class="footer__top_nav">
+                    <p class="footer__top-title">
+                        Our company
+                    </p>
+                    <ul class="footer__top_list">
+                        <li><a href="#" class="footer__top_item">About us</a></li>
+                        <li><a href="#" class="footer__top_item">Blog & News</a></li>
+                        <li><a href="#" class="footer__top_item">FAQ</a></li>
+                        <li><a href="#" class="footer__top_item">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__top_nav">
+                    <p class="footer__top-title">
+                        Currencies
+                    </p>
+                    <ul class="footer__top_list">
+                        <li><a href="#" class="footer__top_item">Bitcoin</a></li>
+                        <li><a href="#" class="footer__top_item">Ethereum</a></li>
+                        <li><a href="#" class="footer__top_item">Litecoin</a></li>
+                        <li><a href="#" class="footer__top_item">Monero</a></li>
+                        <li><a href="#" class="footer__top_item">All currencies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__top_app">
+                <p class="footer__top-title">Mobile App</p>
+                <p class="footer__top_app-info">
+                    Download our mobile app for your Android or iOS device
+                </p>
+                <a href="#" class="footer__top_app-icon open-popup"><img src="./img/GoogleplayBtn.svg" alt="Google Play"></a>
+                <a href="#" class="footer__top_app-icon2 open-popup"><img src="./img/AppStoreBtn.svg" alt="App Store"></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__bottom-text">© 2021 excryptor. All rights reserved</p>
+            <ul class="footer__bottom-list">
+                <li><a href="#" class="footer__bottom-item">Privacy Policy</a></li>
+                <li><a href="#" class="footer__bottom-item">Terms & Conditions</a></li>
+                <li><a href="#" class="footer__bottom-item">Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup__bg"> 
+        <div class="popup">
+            <img src="./img/close.png" alt="x" class="close-popup">
+            <p class="popup-p1">The ExCryptor application will be available very soon. At the moment, the development team is developing it.</p>
+        </div>
+    </div>  
+</footer>
+<script src="js/alert.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+      integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/tables.js"></script>
+  </body>
+</html>

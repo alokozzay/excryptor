@@ -1,0 +1,41 @@
+.block3__title-number::before {
+    height: 252px;
+}
+.block3 {
+    margin-bottom: 120px;
+}
+.block3__box {
+    &-text {
+        font-size: 18px;
+        line-height: 160%;
+        max-width: 488px;
+    }
+    &_example{
+        position: relative;
+        margin-left: 100px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #37353D;
+            left: 0;
+            margin-left: -109px;
+         }
+        &-key{
+            display: flex;
+            align-items: center;
+            &::before {
+                content: url("../img/btc-howitworks.svg");
+                margin-right: 12px;
+            }
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 16px;
+            color: #797A81;
+            margin-bottom: 16px;
+        }
+        
+    }
+}

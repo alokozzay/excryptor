@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/exchange.min.css" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <header class="header">
+    <div class="container header__flex">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="./img/logo.svg" alt="logo" class="header__logo-pc">
+                <!-- <img src="./img/logo-mobile.png" alt="logo" class="header__logo-mobile"> -->
+            </a>
+        </div>
+        <div class="mobile-menu">
+            <span></span>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a href="HowItWorks.html" class="header__list_item">How it works</a></li>
+                <li class="header__list-lidropping">
+                    <a href="#" class="header__list_item header__list-dropping">Currencies</a>
+                    <ul class="header__sublist">
+                        <li><a href="allcourses.html" class="header__subitem">All courses</a></li>
+                        <li><a href="bitcoin.html" class="header__subitem">Bitcoin</a></li>
+                        <li><a href="ethereum.html" class="header__subitem">Ethereum</a></li>
+                        <li><a href="litecoin.html" class="header__subitem">Litecoin</a></li>
+                    </ul>
+                </li>
+                <li><a href="faq.html" class="header__list_item">FAQ</a></li>
+                <li><a href="contacts.html" class="header__list_item">Contacts</a></li>
+            </ul>
+        </nav>
+        <button class="header__btn">English</button>
+    </div>
+</header>
+
+    <main>
+      <div class="progress">
+  <div class="stage">
+    <svg
+      width="61"
+      height="61"
+      viewBox="0 0 61 61"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="progress-img"
+    >
+      <ellipse cx="30.5361" cy="30.0323" rx="30" ry="30.0323" fill="#FD7B01" />
+      <path
+        d="M25.3914 35.3152L18.4967 28.4474L15.5361 31.3964L25.3914 41.2133L45.7154 20.9685L42.7549 18.0195L25.3914 35.3152Z"
+        fill="white"
+      />
+    </svg>
+    <p class="progress-text">Enter Exchange Details</p>
+    <svg
+      width="29"
+      height="23"
+      viewBox="0 0 29 23"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="progress-arrow"
+    >
+      <path
+        d="M18.7761 0L28.5695 9.80392V12.549L18.7761 22.3529L15.9948 19.6078L22.4192 13.1373H0.599609V9.21568H22.4192L15.9556 2.7451L18.7761 0Z"
+        fill="#999AA3"
+      />
+    </svg>
+  </div>
+
+  <div class="stage">
+    <svg
+      width="61"
+      height="61"
+      viewBox="0 0 61 61"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="progress-img"
+    >
+      <path
+        d="M59.2637 30.0323C59.2637 45.7918 46.5023 58.5647 30.7637 58.5647C15.0251 58.5647 2.26367 45.7918 2.26367 30.0323C2.26367 14.2728 15.0251 1.5 30.7637 1.5C46.5023 1.5 59.2637 14.2728 59.2637 30.0323Z"
+        fill="#1D1B22"
+        stroke="#2F3038"
+        stroke-width="3"
+      />
+    </svg>
+    <p class="progress-text">Confirm the Exchange</p>
+    <svg
+      width="29"
+      height="23"
+      viewBox="0 0 29 23"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="progress-arrow"
+    >
+      <path
+        d="M18.7761 0L28.5695 9.80392V12.549L18.7761 22.3529L15.9948 19.6078L22.4192 13.1373H0.599609V9.21568H22.4192L15.9556 2.7451L18.7761 0Z"
+        fill="#999AA3"
+      />
+    </svg>
+  </div>
+
+  <div class="stage">
+    <svg
+      width="61"
+      height="61"
+      viewBox="0 0 61 61"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="progress-img"
+    >
+      <path
+        d="M59.2637 30.0323C59.2637 45.7918 46.5023 58.5647 30.7637 58.5647C15.0251 58.5647 2.26367 45.7918 2.26367 30.0323C2.26367 14.2728 15.0251 1.5 30.7637 1.5C46.5023 1.5 59.2637 14.2728 59.2637 30.0323Z"
+        fill="#1D1B22"
+        stroke="#2F3038"
+        stroke-width="3"
+      />
+    </svg>
+    <p class="progress-text">Complete the Exchange</p>
+  </div>
+</div>
+
+      <section class="wallet">
+    <div class="container">
+        <div class="wallet__box exchange-box">
+            <p class="box-title">Exchange Crypto</p>
+            <p class="wallet__box-subtitle">You send</p>
+            <div class="main__crypto_field main__crypto_field-send">
+                <div class="main__crypto_field-icon"></div>
+                <input type="text" class="main__crypto_input" disabled="disabled">
+            </div>
+
+            <div class="wallet__box_receive">
+                <p class="wallet__box-subtitle">You receive</p>
+                <button style="background: url('../img/change-exchange.svg');" class="wallet__box-change">
+            </div>
+            
+            <div class="main__crypto_field main__crypto_field-get">
+                <div class="main__crypto_field-icon"></div>
+                <input type="text" class="main__crypto_input" disabled="disabled">
+            </div>
+            
+            <div class="wallet__box_rate">
+                <p class="wallet__box_rate-text">Exchange rate</p> 
+                <p class="wallet__box_rate-value"></p> 
+            </div>
+            
+            <p class="wallet__box-subtitle">Recipient Wallet</p>
+            <input type="text" class="input-test">
+            
+            <button class="wallet__box-btn" disabled onclick="nextPage(); saveData(this)">Exchange now</button>
+        </div>
+    </div>
+</section>
+      <section class="agree">
+    <div class="container">
+        <div class="agree__box exchange-box">
+            <p class="box-title">Please confirm the details of your exchange</p>
+
+            <div class="agree__box-subtitle">You send</div>
+            <div class="agree__box_currency exchange__currency">
+                <img src="../img/btc-exchange.svg" alt="icon" class="agree__box_currency-img exchange__currency-img">
+                <p class="agree__box_currency-value exchange__currency-value">0.4732 BTC</p> 
+            </div>
+
+            <p class="agree__box-swap">1 BTC = 14.775557 ETH</p>
+            
+            <div class="agree__box-subtitle">You receive</div>
+            <div class="agree__box_currency exchange__currency">
+                <img src="../img/eth-exchange.svg" alt="icon" class="agree__box_currency-img">
+                <p class="agree__box_currency-value exchange__currency-value">≈ 6.9917936 ETH</p> 
+            </div>
+
+            <div class="agree__box-key">0x36c9cc925dd58747044f52d0a57917df64555a3d</div>
+
+            <div class="agree__box-subtitle">Estimated Arrival</div>
+            <div class="agree__box-time">≈ 10 minutes</div>
+
+            <input class="agree__box-check" type="checkbox" id="check" name="Privacy Policy" value="yes">
+            <label class="agree__box-check-text" for="check">I've read and agree to the ExCryptor Terms of Use and Privacy Policy</label>
+
+            <div class="agree__box_btn">
+                <button class="agree__box_btn-confirm" onclick="nextPage(); startTrade()" disabled>Confirm</button>
+                <button class="agree__box_btn-back" onclick="prevPage()">Back</button>
+            </div>
+        
+        </div>
+    </div>
+</section>
+      <section class="awaiting">
+    <div class="container">       
+        <div class="awaiting__box exchange-box">
+            <div class="trade-info">
+                <p class="trade-info__id">Transaction ID: <span></span></p>
+                <svg onclick="copedAddress(this, true)" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 5.5V20.5C10 21.163 10.2634 21.7989 10.7322 22.2678C11.2011 22.7366 11.837 23 12.5 23H22.5C23.163 23 23.7989 22.7366 24.2678 22.2678C24.7366 21.7989 25 21.163 25 20.5V9.5525C25 9.21945 24.9334 8.88976 24.8041 8.58281C24.6749 8.27585 24.4857 7.9978 24.2475 7.765L20.1038 3.7125C19.6367 3.25582 19.0095 3.00008 18.3563 3H12.5C11.837 3 11.2011 3.26339 10.7322 3.73223C10.2634 4.20107 10 4.83696 10 5.5V5.5Z" stroke="#999AA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 22.999V25.499C20 26.1621 19.7366 26.7979 19.2678 27.2668C18.7989 27.7356 18.163 27.999 17.5 27.999H7.5C6.83696 27.999 6.20107 27.7356 5.73223 27.2668C5.26339 26.7979 5 26.1621 5 25.499V11.749C5 11.086 5.26339 10.4501 5.73223 9.98126C6.20107 9.51242 6.83696 9.24902 7.5 9.24902H10" stroke="#999AA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </div>
+            <p class="box-title">Please send the funds you would like to exchange</p>
+            <div class="awaiting__box-subtitle">Amount</div>
+
+            <div class="agree__box_currency exchange__currency">
+                <img src="../img/btc-exchange.svg" alt="icon" class="agree__box_currency-img exchange__currency-img">
+                <p class="agree__box_currency-value exchange__currency-value">0.4732 BTC</p> 
+            </div>
+
+            <div class="awaiting__box-subtitle">To this address</div>
+            <div class="awaiting__box_new-key"><p></p> <img src="./img/copy-icon.svg" onclick="copedAddress(this, false)"></div>
+
+            <div class="awaiting__box_way">
+                <div class="awaiting__box_way-circle way-circle1"></div>
+                <div class="awaiting__box_way-delimiter"></div>
+                <div class="awaiting__box_way-circle way-circle2"></div>
+                <div class="awaiting__box_way-delimiter"></div>
+                <div class="awaiting__box_way-circle way-circle3"></div>
+                <div class="awaiting__box_way-delimiter"></div>
+                <div class="awaiting__box_way-circle way-circle4"></div>
+            </div>
+
+            <div class="awaiting__box-subtitle">You receive</div>
+            <div class="agree__box_currency exchange__currency">
+                <img src="../img/eth-exchange.svg" alt="icon" class="agree__box_currency-img">
+                <p class="agree__box_currency-value exchange__currency-value">≈ 6.9917936 ETH</p> 
+            </div>
+
+            <div class="awaiting__box-subtitle">Recipient Wallet</div>
+            <div class="awaiting__box_my-key">0x36c9cc925dd58747044f52d0a57917df64555a3d</div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <script src="js/menu.js"></script>
+<!-- Footer  -->
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__top">
+            <div class="footer__top_contacts">
+                    <img src="./img/logo.svg" alt="" class="footer__top-logo">
+                <p class="footer__top-address">
+                    7832 Brookside Lane
+                    Hesperia, California CA 92345   
+                </p>
+                <div class="footer__top_messadgers">
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/facebook.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/twitter.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/instagram.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                    <a href="#" class="footer__top_messadgers-nt">
+                        <img src="./img/youtube.svg" class="footer__top_messadgers-image" alt="network">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__top_navFlex">
+                <div class="footer__top_nav">
+                    <p class="footer__top-title">
+                        Our company
+                    </p>
+                    <ul class="footer__top_list">
+                        <li><a href="#" class="footer__top_item">About us</a></li>
+                        <li><a href="#" class="footer__top_item">Blog & News</a></li>
+                        <li><a href="#" class="footer__top_item">FAQ</a></li>
+                        <li><a href="#" class="footer__top_item">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__top_nav">
+                    <p class="footer__top-title">
+                        Currencies
+                    </p>
+                    <ul class="footer__top_list">
+                        <li><a href="#" class="footer__top_item">Bitcoin</a></li>
+                        <li><a href="#" class="footer__top_item">Ethereum</a></li>
+                        <li><a href="#" class="footer__top_item">Litecoin</a></li>
+                        <li><a href="#" class="footer__top_item">Monero</a></li>
+                        <li><a href="#" class="footer__top_item">All currencies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__top_app">
+                <p class="footer__top-title">Mobile App</p>
+                <p class="footer__top_app-info">
+                    Download our mobile app for your Android or iOS device
+                </p>
+                <a href="#" class="footer__top_app-icon open-popup"><img src="./img/GoogleplayBtn.svg" alt="Google Play"></a>
+                <a href="#" class="footer__top_app-icon2 open-popup"><img src="./img/AppStoreBtn.svg" alt="App Store"></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__bottom-text">© 2021 excryptor. All rights reserved</p>
+            <ul class="footer__bottom-list">
+                <li><a href="#" class="footer__bottom-item">Privacy Policy</a></li>
+                <li><a href="#" class="footer__bottom-item">Terms & Conditions</a></li>
+                <li><a href="#" class="footer__bottom-item">Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup__bg"> 
+        <div class="popup">
+            <img src="./img/close.png" alt="x" class="close-popup">
+            <p class="popup-p1">The ExCryptor application will be available very soon. At the moment, the development team is developing it.</p>
+        </div>
+    </div>  
+</footer>
+<script src="js/alert.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+      integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--<script src="./js/script.min.js"></script>-->
+    <script src="./js/slick.min.js"></script>
+
+    <script src="./js/exchangeScript.js"></script>
+  </body>
+</html>

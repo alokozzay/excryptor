@@ -1,0 +1,196 @@
+.main-section {
+  position: relative;
+}
+.main {
+  margin-top: 121px;
+  margin-bottom: 180px;
+  display: flex;
+  align-items: center;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+  &__info {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 400px;
+      height: 350px;
+      background: rgba(255,255,255,.6);
+      filter: blur(500px);
+      z-index: 0;
+    }
+    // position: relative;
+    &-title {
+      max-width: 606px;
+      font-family: TTFirsNeue Sans;
+      font-weight: 500;
+      font-size: 72px;
+      line-height: 110%;
+
+      // position: relative;
+      &-orange {
+        color: #fd7b01;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background: url(../img/elipse-main.svg);
+        background-repeat: no-repeat;
+        left: 0;
+        bottom: 41px;
+        width: 541px;
+        height: 501px;
+        top: -92px;
+      }
+    }
+    &-subtitle {
+      margin-top: 24px;
+      margin-bottom: 48px;
+      width: 494px;
+      font-size: 20px;
+      line-height: 160%;
+    }
+    &-link {
+      position: relative;
+      display: inline-block;
+      font-family: IBMPlexMono Sans;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+      color: #fd7b01;
+      padding: 19px 32px 19px 72px;
+      background: #26262E;
+      border: 1px solid #fd7b01;
+      box-sizing: border-box;
+      border-radius: 12px;
+      &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        background: url(../img/shield.svg);
+        background-repeat: no-repeat;
+        width: 21px;
+        height: 24px;
+        margin-left: -38px;
+        top: 15px;
+      }
+    }
+  }
+  &__crypto {
+    font-family: IBMPlexSans Sans;
+    width: 480px;
+    height: 496px;
+    background: #26262e;
+    border-radius: 12px;
+    padding: 48px 40px;
+    &-title {
+      font-family: TTFirsNeue Sans;
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: 0.02em;
+    }
+    &-subtitle {
+      font-weight: 500;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      &-sec {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &-info {
+        display: none;
+        font-family: IBMPlexSans Sans;
+        margin: 12px 0;
+        color:#fd7b01;
+      }
+    }
+    &-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 32px;
+      margin-bottom: 40px;
+
+      &_results {
+        font-family: IBMPlexSans Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 100%;
+
+        text-align: right;
+        letter-spacing: 0.02em;
+
+        color: #fd7b01;
+      }
+    }
+    &-change {
+      width: 32px;
+      height: 32px;
+      margin-right: 25px;
+      position: relative;
+      z-index: 1;
+      &::before {
+          content: "";
+          display: block;
+          box-sizing: border-box;
+          height: 50%;
+          width: 2px;
+          background: #2f3038;
+          left: calc((100% - 1px) / 2);
+          top: -50%;
+          position: absolute;
+          z-index: 0;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        height: 45%;
+        width: 2px;
+        background: #2f3038;
+        left: calc((100% - 1px) / 2);
+        top: 100%;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+    &-field {
+      width: 400px;
+      height: 56px;
+      left: 960px;
+      top: 334px;
+      background: #2f3038;
+      border-radius: 12px;
+    }
+    &-exchange {
+      font-size: 16px;
+      line-height: 100%;
+      color: #999aa3;
+    }
+    &-btn {
+      display: block;
+      position: relative;
+      text-align: center;
+      width: 400px;
+      height: 56px;
+      background: #fd7b01;
+      border-radius: 12px;
+      border: 1px solid #fd7b01;
+      transition: all 0.5s ease;
+
+      font-family: IBMPlexMono Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+      color: #fff;
+    }
+  }
+}
+.main__crypto_field-icon {
+  right: 80px;
+}
